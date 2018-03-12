@@ -20,8 +20,6 @@ def GoogleMaps(origin,destination):
     results_str = str(web_obj.read())
     print(results_str)
     web_obj.close()
-    #my name is john smith
-    #Jake is not the goat
 
 def main():
     origincity = str(input("Enter your City and State of Origin, seperated by a comma: "))
