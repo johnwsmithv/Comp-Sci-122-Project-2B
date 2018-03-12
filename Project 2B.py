@@ -20,6 +20,7 @@ def GoogleMaps(origin,destination):
     results_str = str(web_obj.read())
     print(results_str)
     web_obj.close()
+    #my name is john smith
 
 
 def main():
