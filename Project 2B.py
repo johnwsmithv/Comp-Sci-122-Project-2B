@@ -23,6 +23,19 @@ def GoogleMaps(origin,destination):
         "=false" % (orgcity,orgstate,destcity,deststate))
     results_str = str(web_obj.read())
     print(results_str)
+    distance = re.search('[0-9][0-9][0-9] km',results_str)
+    if distance:
+        print(distance)
+    else:
+        distance = re.search('[0-9][,][0-9][0-9][0-9] km', results_str)
+        if distance:
+            print(distance)
+        else:
+            distance = re.search('[0-9][0-9][0-9][0-9] km', results_str)
+            if distance:
+                print(distance)
+
+    
     web_obj.close()
 
   #The main method runs the GoogleMaps method everytime the program is ran.
