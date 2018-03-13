@@ -10,7 +10,7 @@ def GoogleMaps(origin,destination):
     orgstate = orgstate.strip()
     destcity = destcity.strip()
     deststate = deststate.strip()
-    #In order to deal with city names that have two words, like New York City, the whitespace needs to be filled with a + to work in the web address
+    #In order to deal with city names that have two or more words, like New York City, the whitespace needs to be filled with a + to work in the web address
     if " " in orgcity:
         orgcity = orgcity.replace(' ','+')
     elif " " in destcity:
